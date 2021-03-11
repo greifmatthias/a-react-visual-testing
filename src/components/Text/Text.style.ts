@@ -22,10 +22,13 @@ const getAs = (variant: TextVariant) => {
 // Each variant is rendered differently??
 const variantStyles: Record<string, CSSObject> = {
   title: {
-    textTransform: "uppercase",
+    // textTransform: "uppercase", This was original style
+    textTransform: "lowercase",
   },
   subtitle: {},
-  body: {},
+  body: {
+    color: "green",
+  },
 };
 
 // The actual TextComponent

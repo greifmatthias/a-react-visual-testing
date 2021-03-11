@@ -20,6 +20,7 @@ publishing software like Aldus PageMaker including versions of Lorem
 Ipsum.
 `;
 
+// This one contains all the other stories beneath
 export const All = () => (
   <>
     <Title />
@@ -29,16 +30,21 @@ export const All = () => (
   </>
 );
 
+// Title: text--title
 export const Title = () => <Text variant="title">I am your next article</Text>;
 
+// Subtitle: text--subtitle
 export const Subtitle = () => (
   <Text variant="subtitle">Why you should read this</Text>
 );
 
+// Body: text--body
 export const Body = () => <Text variant="body">{content}</Text>;
 
+// Default: text--default
 export const Default = () => <Text>{content}</Text>;
 
+// Styled: text--styled
 export const Styled = () => {
   const textStyle: CSSObject = {
     fontSize: "0.9rem",
