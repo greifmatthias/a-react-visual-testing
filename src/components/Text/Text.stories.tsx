@@ -23,15 +23,15 @@ Ipsum.
 export const All = () => (
   <>
     <Title />
-    <SubTitle />
-    <DefaultStyled />
+    <Subtitle />
+    <Styled />
     <Body />
   </>
 );
 
 export const Title = () => <Text variant="title">I am your next article</Text>;
 
-export const SubTitle = () => (
+export const Subtitle = () => (
   <Text variant="subtitle">Why you should read this</Text>
 );
 
@@ -39,7 +39,7 @@ export const Body = () => <Text variant="body">{content}</Text>;
 
 export const Default = () => <Text>{content}</Text>;
 
-export const DefaultStyled = () => {
+export const Styled = () => {
   const textStyle: CSSObject = {
     fontSize: "0.9rem",
     fontStyle: "italic",
