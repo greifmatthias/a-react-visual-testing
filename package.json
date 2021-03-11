@@ -6,6 +6,7 @@
     "storybook": "start-storybook -p 9090",
     "storybook:build": "build-storybook -o storybook-static",
     "test": "jest -u",
+    "test:environment": "npm run storybook:build && start-server-and-test 'npx http-server ./storybook-static -s -c-1 -p 9090' http://localhost:9090 'jest -u'",
     "update": "npx npm-check-updates -u && npm i"
   },
   "dependencies": {

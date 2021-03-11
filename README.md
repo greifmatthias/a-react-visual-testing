@@ -1,6 +1,6 @@
 # a-react-visual-testing
 
-Setup Visual Testing for React components using Storybook and Jest.
+Setup automated Visual Testing for React components using Storybook and Jest.
 
 ## Step 1 - Prerequisites
 
@@ -30,5 +30,19 @@ Setup Visual Testing for React components using Storybook and Jest.
   - Run tests: `npm run test`
 
 - Change something
+
   - Rerun test
   - Check the diff, the report, ..
+
+## Step 3 - Snapshots
+
+Regenerate a base-snapshot for a component
+
+## Step 4 - Automate
+
+- `npm i -D start-server-and-test http-server`
+- automation-script: `npm run storybook:build && start-server-and-test 'npx http-server ./storybook-static -s -c-1 -p 9090' http://localhost:9090 'jest -u'`
+  - Build Storybook
+  - Start an http-server and serve the fresh build Storybook
+  - Listen for Port to be ready
+  - Run tests if ready
