@@ -5,7 +5,7 @@
   "scripts": {
     "storybook": "start-storybook -p 9090",
     "storybook:build": "build-storybook -o storybook-static",
-    "test": "jest",
+    "test": "jest -u",
     "update": "npx npm-check-updates -u && npm i"
   },
   "dependencies": {
