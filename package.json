@@ -1,0 +1,44 @@
+{
+  "name": "a-react-visual-testing",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "5.2.1",
+    "typescript": "4.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.13.10",
+    "@storybook/addon-actions": "6.1.21",
+    "@storybook/addon-essentials": "6.1.21",
+    "@storybook/addon-links": "6.1.21",
+    "@storybook/react": "6.1.21",
+    "@types/jest": "26.0.20",
+    "@types/node": "14.14.33",
+    "@types/react": "17.0.3",
+    "@types/react-dom": "17.0.2",
+    "@types/styled-components": "^5.1.7",
+    "babel-loader": "8.2.2",
+    "http-server": "0.12.3",
+    "jest": "26.6.3",
+    "jest-puppeteer": "4.4.0",
+    "jest-screenshot": "0.3.2",
+    "puppeteer": "2.1.1",
+    "start-server-and-test": "1.12.0"
+  },
+  "scripts": {
+    "build": "webpack --progress",
+    "build:prod": "webpack --mode=production --progress",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook -o storybook-static",
+    "update": "npx npm-check-updates -u && npm i",
+    "build-storybook": "build-storybook"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  }
+}
